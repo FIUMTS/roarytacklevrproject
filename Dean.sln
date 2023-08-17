@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{A2400CE4-50FA-7181-E04A-F196F077DCFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.Interaction.Toolkit.Samples.StarterAssets", "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj", "{702CEAD3-7CD0-FDAF-DDCF-738BBA531F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor", "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj", "{717BCE94-C2ED-A647-D409-283298CB69A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2400CE4-50FA-7181-E04A-F196F077DCFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2400CE4-50FA-7181-E04A-F196F077DCFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2400CE4-50FA-7181-E04A-F196F077DCFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2400CE4-50FA-7181-E04A-F196F077DCFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702CEAD3-7CD0-FDAF-DDCF-738BBA531F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702CEAD3-7CD0-FDAF-DDCF-738BBA531F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702CEAD3-7CD0-FDAF-DDCF-738BBA531F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702CEAD3-7CD0-FDAF-DDCF-738BBA531F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717BCE94-C2ED-A647-D409-283298CB69A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717BCE94-C2ED-A647-D409-283298CB69A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717BCE94-C2ED-A647-D409-283298CB69A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717BCE94-C2ED-A647-D409-283298CB69A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
