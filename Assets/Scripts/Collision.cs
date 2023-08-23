@@ -19,7 +19,7 @@ public class Collision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,11 +27,11 @@ public class Collision : MonoBehaviour
         if (other.CompareTag("Player") && CompareTag("Catcher"))
         {
             animator.speed = 0;
-            Debug.Log("COLLISION with catcher!");
+            Debug.Log("COLLISION WITH CATCHER!");
             gameManager.catcherTackled = true;
 
         }
-        else
+        else if (other.CompareTag("Player") && CompareTag("Roary"))
         {
             Debug.Log("COLLISION, but not catcher");
         }
