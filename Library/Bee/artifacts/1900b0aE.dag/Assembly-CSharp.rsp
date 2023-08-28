@@ -395,6 +395,7 @@
 "Assets/Scripts/Collision.cs"
 "Assets/Scripts/Football Path.cs"
 "Assets/Scripts/FunctionTimer.cs"
+"Assets/Scripts/Loader.cs"
 "Assets/Scripts/QuadraticCurve.cs"
 "Assets/Scripts/TouchdownCollision.cs"
 -langversion:9.0

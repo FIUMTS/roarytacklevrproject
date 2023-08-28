@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CircleBillboard : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Responsible for making the circle around the football constantly look at the player no matter the position of the player
 
+    //Camera of the player
     public Camera mainCam;
     void Start()
     {

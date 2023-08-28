@@ -13,7 +13,6 @@ public class Collision : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        //gameManager = GetComponent<GameManager>();
     }
 
     // Update is called once per frame

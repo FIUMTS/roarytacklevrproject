@@ -63,6 +63,7 @@
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\ControllerBindings.cs" />
     <Compile Include="Assets\Scripts\Football Path.cs" />
+    <Compile Include="Assets\Scripts\Loader.cs" />
     <Compile Include="Assets\Scripts\QuadraticCurve.cs" />
     <Compile Include="Assets\Scripts\TouchdownCollision.cs" />
     <Compile Include="Assets\GameManager.cs" />
