@@ -10,7 +10,7 @@ public class FunctionTimer
 
     private static List<FunctionTimer> activeTimerList;
     private static GameObject initGameObject;
-    private static void InitIfNeeded() //Initialize the list of FunctionTimers upon the creation of the first timer
+    private static void InitIfNeeded() //Initialize the list of FunctionTimers upon the creation of the first timer (if needed)
     {
         if (initGameObject == null)
         {
@@ -35,7 +35,7 @@ public class FunctionTimer
         activeTimerList.Remove(functionTimer);
     }
 
-    public static void StopTimer(string timerName)
+    public static void StopTimer(string timerName) //stops timer with name timerName
     {
         for(int i=0; i<activeTimerList.Count; i++)
         {
@@ -58,13 +58,13 @@ public class FunctionTimer
     }
 
     // FunctionTimer class below
-    float time;
-    Action action;
-    GameObject gameObject;
-    private bool isDestroyed;
-    string timerName;
+    float time;                 //Timer length
+    Action action;              //Action called on timer end
+    GameObject gameObject;      //Object created when timer is created
+    private bool isDestroyed;   //bool to check if timer is removed/deleted
+    string timerName;           //timer name (optional)
 
-    private FunctionTimer(Action action, float time, GameObject gameObject, string timerName)
+    private FunctionTimer(Action action, float time, GameObject gameObject, string timerName) //constructor
     {
         this.action = action;
         this.time = time;

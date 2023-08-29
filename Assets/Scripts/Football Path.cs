@@ -7,6 +7,8 @@ public class FootballPath : MonoBehaviour
     //Import the QuadraticCurve Script
     public QuadraticCurve curve;
 
+    public GameManager gameManager;
+
     //Have a speed variable
     public float speed;
 
@@ -18,16 +20,23 @@ public class FootballPath : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    //Draws the path of the football in the unity editor
     void Update()
     {
-        sampleTime += Time.deltaTime * speed;
-        transform.position = curve.evaluate(sampleTime);
-        transform.forward = curve.evaluate(sampleTime*0.001f) - transform.position;
+        //if (Time.timeScale == 1)
+        //{
+        //    sampleTime += Time.deltaTime * speed;
+        //    transform.position = curve.evaluate(sampleTime);
+        //    transform.forward = curve.evaluate(sampleTime*0.001f) - transform.position;
 
-        if(sampleTime >= 1f)
-        {
-            Debug.Log("Football destroyed");
-            Destroy(gameObject);
-        }
+        //    if(sampleTime >= 1f)
+        //    {
+        //        Debug.Log("Football destroyed");
+        //        Destroy(gameObject);
+        //    }
+        //}
+
+        //gameManager.ballThrown = true;
     }
 }

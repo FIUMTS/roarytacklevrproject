@@ -1,0 +1,59 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class ControllerBindings : MonoBehaviour
+{
+
+    private ActionBasedController controller; //Controller input
+    public TextMeshProUGUI introText;         //Text above the large screen of arena
+    public GameManager gameManager;           //GameManager object
+
+    void Start()
+    {
+        controller = GetComponent<ActionBasedController>();
+        controller.activateAction.action.performed += StartGame; //StartGame is executed when right trigger is pressed (right trigger is "activateAction" in InputActionAsset)
+
+    }
+
+    //StartGame is executed when player presses the right trigger to start the game
+    private void StartGame(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        gameManager.StartGame(obj);
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(gameManager.catcherTackled == true)
+        {
+            controller.activateAction.action.performed += ReloadScene; //Replace the StartGame action on right trigger to ReloadScene
+        }
+        else if(gameManager.catcherCaughtFootball == true)
+        {
+            controller.activateAction.action.performed += ReloadScene; //Replace the StartGame action on right trigger to ReloadScene
+        }
+    }
+
+
+    private void ReloadScene(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        controller.activateAction.action.performed -= ReloadScene; //Remove ReloadScene callback
+        controller.activateAction.action.performed += StartGame;   //Replace ReloadGame with StartGame upon reload
+        gameManager.ReloadScene(obj);
+    }
+
+    public void SetTriggerToReload()
+    {
+        controller.activateAction.action.performed += ReloadScene; //Remove ReloadScene callback
+    }
+
+    public void SetTriggerToLoadNext()
+    {
+        controller.activateAction.action.performed += ReloadScene; //Remove ReloadScene callback
+
+    }
+}

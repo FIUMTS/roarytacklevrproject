@@ -11,9 +11,16 @@ public class Loader
     public enum Scene
     {
         Level1,
+        Level2,
+        Level3,
     }
     public static void Load(Scene scene)
     {
         SceneManager.LoadScene(scene.ToString());
+    }
+
+    public static void Reload()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

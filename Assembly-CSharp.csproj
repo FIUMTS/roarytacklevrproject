@@ -60,13 +60,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Circle Billboard.cs" />
     <Compile Include="Assets\Scripts\Collision.cs" />
-    <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\ControllerBindings.cs" />
     <Compile Include="Assets\Scripts\Football Path.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ControllerBindings.cs" />
     <Compile Include="Assets\Scripts\QuadraticCurve.cs" />
     <Compile Include="Assets\Scripts\TouchdownCollision.cs" />
-    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\FunctionTimer.cs" />
   </ItemGroup>
   <ItemGroup>
