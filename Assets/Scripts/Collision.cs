@@ -7,12 +7,14 @@ using UnityEngine;
 public class Collision : MonoBehaviour
 {
     private Animator animator;
+    public ControllerBindings controllerBindings;
 
     public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        controllerBindings = controllerBindings.GetComponent<ControllerBindings>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class Collision : MonoBehaviour
             animator.speed = 0;
             Debug.Log("COLLISION WITH CATCHER!");
             gameManager.catcherTackled = true;
+            controllerBindings.SetTriggerToLoadNext();
 
         }
         else if (other.CompareTag("Player") && CompareTag("Roary"))
@@ -35,5 +38,6 @@ public class Collision : MonoBehaviour
             Debug.Log("COLLISION, but not catcher");
         }
     }
+
 
 }

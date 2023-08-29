@@ -8,6 +8,8 @@ using UnityEngine;
 public class FunctionTimer
 {
 
+    //FunctionTimer class made to execute any given funtion after an amount of time has expired.
+
     private static List<FunctionTimer> activeTimerList;
     private static GameObject initGameObject;
     private static void InitIfNeeded() //Initialize the list of FunctionTimers upon the creation of the first timer (if needed)
