@@ -1698,6 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &101570379
 GameObject:
@@ -3122,6 +3123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1001 &147943217
 PrefabInstance:
@@ -3223,6 +3225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!136 &163554021
 CapsuleCollider:
@@ -4446,6 +4449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1001 &420959197
 PrefabInstance:
@@ -4575,6 +4579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &421818450
 GameObject:
@@ -5014,6 +5019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1 &552150924
 GameObject:
@@ -6918,6 +6924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &651051746
 GameObject:
@@ -7138,6 +7145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 1786921597}
 --- !u!54 &651051754
 Rigidbody:
@@ -7227,6 +7235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1 &704466663
 GameObject:
@@ -7645,6 +7654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1001 &792629775
 PrefabInstance:
@@ -12699,6 +12709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1 &954620166
 GameObject:
@@ -14158,6 +14169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &1098548245 stripped
 GameObject:
@@ -14199,6 +14211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1001 &1108742139
 PrefabInstance:
@@ -15670,6 +15683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1001 &1144265371
 PrefabInstance:
@@ -15799,6 +15813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &1212549139
 GameObject:
@@ -16246,6 +16261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &1332336345
 GameObject:
@@ -16604,6 +16620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1001 &1361993451
 PrefabInstance:
@@ -17426,6 +17443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1 &1673259461
 GameObject:
@@ -18128,6 +18146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1001 &1801507420
 PrefabInstance:
@@ -18283,6 +18302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1 &1942992227 stripped
 GameObject:
@@ -18324,6 +18344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1 &2002024114
 GameObject:
@@ -18372,6 +18393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1786921597}
+  controllerBindings: {fileID: 204871563}
 --- !u!65 &2002024117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18460,6 +18482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1 &2070879790
 GameObject:
@@ -18563,6 +18586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c62d7208074e8449281fc795f1d265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerBindings: {fileID: 204871563}
   gameManager: {fileID: 1786921597}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

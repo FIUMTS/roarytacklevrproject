@@ -31,7 +31,7 @@ public class FunctionTimer
         return functionTimer;
     }
 
-    private static void RemoveTimer(FunctionTimer functionTimer) //Removes a timer from the FunctionTimer list via timer name
+    public static void RemoveTimer(FunctionTimer functionTimer) //Removes a timer from the FunctionTimer list via timer name
     {
         InitIfNeeded();
         activeTimerList.Remove(functionTimer);

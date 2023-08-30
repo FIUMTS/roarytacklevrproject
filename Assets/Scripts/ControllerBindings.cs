@@ -15,7 +15,6 @@ public class ControllerBindings : MonoBehaviour
     {
         controller = GetComponent<ActionBasedController>();
         controller.activateAction.action.performed += StartGame; //StartGame is executed when right trigger is pressed (right trigger is "activateAction" in InputActionAsset)
-
     }
 
     //StartGame is executed when player presses the right trigger to start the game
@@ -34,6 +33,7 @@ public class ControllerBindings : MonoBehaviour
 
     private void ReloadScene(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        //Debug.Log("ReloadScene entered");
         controller.activateAction.action.performed -= ReloadScene; //Remove ReloadScene callback
         controller.activateAction.action.performed += StartGame; //Remove ReloadScene callback
         gameManager.ReloadScene(obj);
@@ -41,12 +41,14 @@ public class ControllerBindings : MonoBehaviour
 
     public void SetTriggerToReload()
     {
+        //Debug.Log("SetTriggerToReload entered");
         controller.activateAction.action.performed -= StartGame; //Remove ReloadScene callback
         controller.activateAction.action.performed += ReloadScene; //Remove ReloadScene callback
     }
 
     public void SetTriggerToLoadNext()
     {
+       // Debug.Log("SetTriggerToLoadNext entered");
         controller.activateAction.action.performed -= StartGame; //Remove ReloadScene callback
         controller.activateAction.action.performed += ReloadScene; //Remove ReloadScene callback
 

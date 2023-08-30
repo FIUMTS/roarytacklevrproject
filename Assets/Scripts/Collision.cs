@@ -29,8 +29,9 @@ public class Collision : MonoBehaviour
         {
             animator.speed = 0;
             Debug.Log("COLLISION WITH CATCHER!");
+            controllerBindings.SetTriggerToReload();
             gameManager.catcherTackled = true;
-            controllerBindings.SetTriggerToLoadNext();
+            tag = "Roary";
 
         }
         else if (other.CompareTag("Player") && CompareTag("Roary"))
