@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
@@ -387,9 +387,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: be690000
-      m_LastClickedID: 27070
-      m_ExpandedIDs: f8faffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 50d2fffff8faffff48680000166900002e69000062690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -743,9 +743,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -48.420227, y: 7.6615496, z: -34.23776}
+    m_Target: {x: -36.801, y: 11.411014, z: -7.0235233}
     speed: 2
-    m_Value: {x: -48.420227, y: 7.6615496, z: -34.23776}
+    m_Value: {x: -36.801, y: 11.411014, z: -7.0235233}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -791,13 +791,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0019716637, y: 0.99679005, z: -0.014890952, w: -0.08158272}
+    m_Target: {x: 0.035199124, y: 0.7013203, z: 0.036934566, w: -0.71150404}
     speed: 2
-    m_Value: {x: -0.002553932, y: 0.9960707, z: -0.020855226, w: -0.086033374}
+    m_Value: {x: 0.035186965, y: 0.701078, z: 0.036921807, w: -0.71125823}
   m_Size:
-    m_Target: 13.823106
+    m_Target: 27.745335
     speed: 2
-    m_Value: 13.823106
+    m_Value: 27.745335
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -914,7 +914,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Textures
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -922,16 +922,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\alecramo\Unity Projects\Dean\unityvrproject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 4}
-    m_SelectedIDs: 1e990100
-    m_LastClickedID: 104734
-    m_ExpandedIDs: 00000000da6e0000dc6e0000de6e0000e06e0000e26e0000e46e0000e66e0000e86e0000ea6e0000ec6e0000
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: de740000
+    m_LastClickedID: 29918
+    m_ExpandedIDs: 00000000da6e0000dc6e0000de6e0000e06e0000e26e0000e46e0000e66e0000e86e0000ea6e0000ec6e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -984,8 +984,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 26680000
+    m_LastClickedInstanceID: 26662
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 226f0000
     m_RenameOverlay:

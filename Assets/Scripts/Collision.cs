@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.UI;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class Collision : MonoBehaviour
 {
     private Animator animator;
     public ControllerBindings controllerBindings;
-
+    public TextMeshProUGUI introText;           //text above the arena display
     public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class Collision : MonoBehaviour
         {
             animator.speed = 0;
             Debug.Log("COLLISION WITH CATCHER!");
+            introText.text = "You tackled Roary!\nPress Right Trigger to move onto the next level.";
             controllerBindings.SetTriggerToReload();
             gameManager.catcherTackled = true;
             tag = "Roary";

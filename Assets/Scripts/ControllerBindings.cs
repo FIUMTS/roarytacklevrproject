@@ -20,6 +20,7 @@ public class ControllerBindings : MonoBehaviour
     //StartGame is executed when player presses the right trigger to start the game
     private void StartGame(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        //gameManager.isPaused = false;
         gameManager.StartGame(obj);
     }
 

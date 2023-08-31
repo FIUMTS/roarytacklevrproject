@@ -21,16 +21,18 @@ public class GameManager : MonoBehaviour
     public GameObject catcherRoary;             //catcher roary GameObject
     public GameObject football;
 
-    private EvercoastPlayer ecPlayer;           //ecv player of dean schriner
+    public TextMeshProUGUI introText;   
 
-    public TextMeshProUGUI introText;           //text above the arena display
+    private EvercoastPlayer ecPlayer;           //ecv player of dean schriner
 
     public QuadraticCurve curve;                //Import the QuadraticCurve Script
     public float speed;                         //Have a speed variable
 
     public bool catcherTackled;                 //bool that checks if the roary has been tackled or touched by the player.
     public bool catcherCaughtFootball;          //bool that checks if catcher caught the ball/player failed to catch the ball
-    public bool ballThrown;
+    private bool ballThrown;                     //bool that checks if football has been thrown
+    public bool isPaused;
+
 
     private float sampleTime;
 
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour
         ballThrown = false;
         catcherTackled = false;
         catcherCaughtFootball = false;
+        isPaused = true;
 
         ecPlayer = deanMesh.GetComponent<EvercoastPlayer>();
         catcherRoary = roaries[randomInt]; //assigns random roary to be catcher roary
@@ -51,20 +54,15 @@ public class GameManager : MonoBehaviour
         footballEndpoint.transform.position = footballEndPaths.transform.GetChild(randomInt).position; //assigns endpoint relating to randomly assigned roary to be the endpoint that the football arc follows
         sampleTime = 0f;
         Time.timeScale = 0; //freeze/pause game on load
+        if(isPaused)
+        {
+            Debug.Log("Game is paused.");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(catcherTackled)
-        {
-            introText.text = "You tackled Roary!\nPress Right Trigger to move onto the next level.";
-        }
-        else if(catcherCaughtFootball)
-        {
-            introText.text = "Roary caught the ball!\nPress Right Trigger to try again.";
-        }
-
         if(ballThrown)
         {
             Debug.Log("This should be called");
@@ -75,8 +73,10 @@ public class GameManager : MonoBehaviour
     public void StartGame(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         //If the time is frozen, unfreeze time (aka start the game)
-        if (Time.timeScale == 0)
+        if (isPaused)
         {
+            isPaused = false;
+            Debug.Log("No longer paused");
             Time.timeScale = 1.0f;      //Resume time
             introText.text = "Tackle Roary before he catches the football!";
 
@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("ThrowBall Entered");
 
         sampleTime += Time.deltaTime * speed;
-        Debug.Log(sampleTime);
+        //Debug.Log(sampleTime);
         football.transform.position = curve.evaluate(sampleTime);
         football.transform.forward = curve.evaluate(sampleTime * 0.001f) - football.transform.position;
 
