@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public GameObject catcherRoary;             //catcher roary GameObject
     public GameObject football;
 
+    private Animator catcherAnimator;
+
     public TextMeshProUGUI introText;   
 
     private EvercoastPlayer ecPlayer;           //ecv player of dean schriner
@@ -47,11 +49,13 @@ public class GameManager : MonoBehaviour
         catcherTackled = false;
         catcherCaughtFootball = false;
         isPaused = true;
+        
 
         ecPlayer = deanMesh.GetComponent<EvercoastPlayer>();
         catcherRoary = roaries[randomInt]; //assigns random roary to be catcher roary
         catcherRoary.tag = "Catcher"; 
         footballEndpoint.transform.position = footballEndPaths.transform.GetChild(randomInt).position; //assigns endpoint relating to randomly assigned roary to be the endpoint that the football arc follows
+        catcherAnimator = catcherRoary.GetComponent<Animator>();
         sampleTime = 0f;
         Time.timeScale = 0; //freeze/pause game on load
         if(isPaused)
@@ -102,8 +106,14 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Timers started");
         FunctionTimer.Create(() => SetThrowBallTrue(), 1.9f);
+        FunctionTimer.Create(() => TurnRoaryHead(), 8f);
         //FunctionTimer.Create(() => Turn(catcherRoary, 35), 5);
         //FunctionTimer.Create(() => Turn(catcherRoary, -35), 10);
+    }
+
+    private void TurnRoaryHead()
+    {
+        catcherAnimator.SetBool("turnHead", true);
     }
 
     public void SetThrowBallTrue()
