@@ -3,7 +3,87 @@ guid: a4ae8a71adeca5843b98b1f7dbe5b9b6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3blue
+    second: {fileID: 2100000, guid: 54633d2ae8695514d8dc0332e9f4da32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Division of Information Technology
+    second: {fileID: 2100000, guid: 079b7a886072bf7408670c3174057c73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Goal 1
+    second: {fileID: 2100000, guid: 725c30d79066b5f4991d0959ed0aea4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 9f7d058787de4614d93257975ac15392, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 46100ead4146fb24b8f5ecbbbe6fb603, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 53eb3febf8d265e46894096db13d01cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 0693aba74108a0c4e9b433cf2f056b80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PAINT SEATS
+    second: {fileID: 2100000, guid: bfed68d06359c864f9ceaeb41619ccd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: for screen
+    second: {fileID: 2100000, guid: 55b5c742bd9dbe541b2869f27566c77f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: logo FIU
+    second: {fileID: 2100000, guid: eed497ee42b83144b9c057cb203e87d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: other blue
+    second: {fileID: 2100000, guid: 837768b2a03cdc440b931e22c53a5833, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panther bW
+    second: {fileID: 2100000, guid: 5cdd8436b17c3f142ab9d9398f78a12e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Division of Information Technology
+    second: {fileID: 2800000, guid: 03ddf80f88fd88f488f63cc95f6ee294, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: for screen
+    second: {fileID: 2800000, guid: 4a2b4bd4aa30543479c4927c1a41f956, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: logo FIU
+    second: {fileID: 2800000, guid: f080427dbbae6cb4cbcdc7b5d69e86f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: panther bW
+    second: {fileID: 2800000, guid: e171daa2ca70cf34e95de779197f34d0, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
