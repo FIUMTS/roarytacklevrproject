@@ -35,7 +35,7 @@ public class TouchdownCollision : MonoBehaviour
         {
             if(!gameManager.catcherTackled)
             {
-                introText.text = "Roary caught the ball!\nPress Right Trigger to try again.";
+                introText.text = "Roary caught the ball!\nPress Right Trigger to return to main menu.";
             }
             Debug.Log("Roary has reached the end");
             gameManager.catcherCaughtFootball = true;

@@ -7,7 +7,7 @@ using TMPro;
 using System.Data;
 using static UnityEngine.UISystemProfilerApi;
 using System.Security.Cryptography;
-
+using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,11 +19,12 @@ public class GameManager : MonoBehaviour
     public GameObject footballEndPaths;         //object containing all the possible end paths that the football can end at
     public GameObject deanMesh;                 //ecv of dean schriner
     public GameObject catcherRoary;             //catcher roary GameObject
-    public GameObject football;
+    public GameObject football;                 //football gameobject
+    public GameObject player;                   //player gameobject
 
-    private Animator catcherAnimator;
+    private Animator catcherAnimator;           //Animator for roary
 
-    public TextMeshProUGUI introText;   
+    public TextMeshProUGUI introText;           //Text on top of stadium
 
     private EvercoastPlayer ecPlayer;           //ecv player of dean schriner
 
@@ -32,16 +33,30 @@ public class GameManager : MonoBehaviour
 
     public bool catcherTackled;                 //bool that checks if the roary has been tackled or touched by the player.
     public bool catcherCaughtFootball;          //bool that checks if catcher caught the ball/player failed to catch the ball
-    private bool ballThrown;                     //bool that checks if football has been thrown
-    public bool isPaused;
+    private bool ballThrown;                    //bool that checks if football has been thrown
+    public bool isPaused;                       //bool to check if game is paused in beginning
+
+    //private int level = 0;                      //int taht indicates difficulty level
+
+    public GameObject roaryTackleGameObjects;   //all game objects associated with the Roary Tackle game
 
 
     private float sampleTime;
 
 
-    void Start()
+    void Start()        //Setting variables at startup
     {
         Debug.Log("Start function is running");
+
+
+    }
+
+    public void StartRoaryTackle()
+    {
+
+        roaryTackleGameObjects.SetActive(true);
+        player.transform.position = new Vector3(58.54f, 0.05f, -7.46f);
+        player.transform.Rotate(0, -90, 0);
 
         int randomInt = Random.Range(0, 10);
 
@@ -49,7 +64,6 @@ public class GameManager : MonoBehaviour
         catcherTackled = false;
         catcherCaughtFootball = false;
         isPaused = true;
-        
 
         ecPlayer = deanMesh.GetComponent<EvercoastPlayer>();
         catcherRoary = roaries[randomInt]; //assigns random roary to be catcher roary
@@ -69,7 +83,7 @@ public class GameManager : MonoBehaviour
     {
         if(ballThrown)
         {
-            Debug.Log("This should be called");
+           // Debug.Log("This should be called");
             ThrowBall();
         }
     }
@@ -91,11 +105,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ReloadScene(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Loader.Reload();
-        Debug.Log("Scene reloaded.");
-    }
+
 
     public void Turn(GameObject obj, float degrees)
     {
@@ -104,11 +114,8 @@ public class GameManager : MonoBehaviour
 
     public void StartTimers()
     {
-        Debug.Log("Timers started");
         FunctionTimer.Create(() => SetThrowBallTrue(), 1.9f);
         FunctionTimer.Create(() => TurnRoaryHead(), 8f);
-        //FunctionTimer.Create(() => Turn(catcherRoary, 35), 5);
-        //FunctionTimer.Create(() => Turn(catcherRoary, -35), 10);
     }
 
     private void TurnRoaryHead()
@@ -124,17 +131,35 @@ public class GameManager : MonoBehaviour
             Debug.Log("ballThrown should be true");
         }
     }
+    
+    public void ReloadScene(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        Loader.Reload();
+        Debug.Log("Scene reloaded.");
+    }
 
-    public void LoadNextScene()
+    public void LoadNextScene(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         //TO DO - Replace SceneManager below with Loader.Load() to load the next scene.
-        Loader.Load(Loader.Scene.Level1);
+        Debug.Log("LoadNextScene entered");
+        switch(Loader.GetCurrentLevel())
+        {
+            case ("Level1"):
+                Loader.Load(Loader.Scene.Level2);
+                break;
+            case ("Level2"):
+                Loader.Load(Loader.Scene.Level3);
+                break;
+            default:
+                Loader.Load(Loader.Scene.Level1);
+                break;
+        }
     }
 
     public void ThrowBall()
     {
-        Debug.Log("ThrowBall Entered");
-
+        //Debug.Log("ThrowBall Entered");
+        football.SetActive(true);
         sampleTime += Time.deltaTime * speed;
         //Debug.Log(sampleTime);
         football.transform.position = curve.evaluate(sampleTime);

@@ -23,4 +23,9 @@ public class Loader
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public static string GetCurrentLevel()
+    {
+       return SceneManager.GetActiveScene().name;
+    }
 }

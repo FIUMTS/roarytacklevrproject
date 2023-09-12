@@ -31,7 +31,7 @@ public class Collision : MonoBehaviour
             //animator.speed = 0;
             animator.SetBool("roaryTackled", true);
             Debug.Log("COLLISION WITH CATCHER!");
-            introText.text = "You tackled Roary!\nPress Right Trigger to move onto the next level.";
+            introText.text = "You tackled Roary!\nPress Right Trigger to return to main menu.";
             controllerBindings.SetTriggerToReload();
             gameManager.catcherTackled = true;
             tag = "Roary";

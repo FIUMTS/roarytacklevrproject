@@ -40,6 +40,13 @@ public class ControllerBindings : MonoBehaviour
         gameManager.ReloadScene(obj);
     }
 
+    private void LoadNextScene(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        controller.activateAction.action.performed -= LoadNextScene;
+        controller.activateAction.action.performed += StartGame;
+        gameManager.LoadNextScene(obj);
+    }
+
     public void SetTriggerToReload()
     {
         //Debug.Log("SetTriggerToReload entered");
@@ -51,7 +58,7 @@ public class ControllerBindings : MonoBehaviour
     {
        // Debug.Log("SetTriggerToLoadNext entered");
         controller.activateAction.action.performed -= StartGame; //Remove ReloadScene callback
-        controller.activateAction.action.performed += ReloadScene; //Remove ReloadScene callback
+        controller.activateAction.action.performed += LoadNextScene; //Remove ReloadScene callback
 
     }
 }

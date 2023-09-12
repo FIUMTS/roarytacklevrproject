@@ -5606,7 +5606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7f985558f5a6a1a409c7c0175f2619a0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21547,7 +21547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c33b40583a3bf4d94cf1a14ece6daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCam: {fileID: 651051750}
 --- !u!1001 &1801507420
 PrefabInstance:
   m_ObjectHideFlags: 0
