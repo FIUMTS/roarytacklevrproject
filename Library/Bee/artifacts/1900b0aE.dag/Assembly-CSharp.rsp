@@ -396,8 +396,8 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Loader.cs"
 "Assets/Scripts/QuadraticCurve.cs"
+"Assets/Scripts/Teleport.cs"
 "Assets/Scripts/TouchdownCollision.cs"
-"Assets/StartRoaryTackle.cs"
 -langversion:9.0
 
 /deterministic

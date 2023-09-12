@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ControllerBindings.cs" />
     <Compile Include="Assets\Scripts\QuadraticCurve.cs" />
+    <Compile Include="Assets\Scripts\Teleport.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\TouchdownCollision.cs" />
     <Compile Include="Assets\Scripts\FunctionTimer.cs" />

@@ -72,10 +72,17 @@ public class GameManager : MonoBehaviour
         catcherAnimator = catcherRoary.GetComponent<Animator>();
         sampleTime = 0f;
         Time.timeScale = 0; //freeze/pause game on load
-        if(isPaused)
+        player.transform.position = new Vector3(58.54f, 0.05f, -7.46f);
+        //player.transform.Rotate(0, -90, 0);
+        if (isPaused)
         {
             Debug.Log("Game is paused.");
         }
+    }
+
+    public void StartRoam()
+    {
+        
     }
 
     // Update is called once per frame
