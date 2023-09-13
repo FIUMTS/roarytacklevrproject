@@ -8,7 +8,12 @@ public class Teleport : MonoBehaviour
     public GameObject player;
     public GameObject fieldPos;
     public GameObject suitePos;
+    Vector3 menuStartPos;
 
+    public void Start()
+    {
+        menuStartPos = player.transform.position;
+    }
 
     public void TeleportToField()
     {
@@ -20,5 +25,11 @@ public class Teleport : MonoBehaviour
     {
         player.transform.Rotate(0, -90, 0);
         player.transform.position = suitePos.transform.position;
+    }
+
+    public void TeleportToMenuArea()
+    {
+        player.transform.position = menuStartPos;
+        //player.transform.rotation = menuStartPos;
     }
 }

@@ -59,8 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Collision.cs" />
+    <Compile Include="Assets\Scripts\MenuButtonActions.cs" />
     <Compile Include="Assets\Scripts\Football Path.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
+    <Compile Include="Assets\Scripts\ShiftSpeedMode.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ControllerBindings.cs" />
     <Compile Include="Assets\Scripts\QuadraticCurve.cs" />

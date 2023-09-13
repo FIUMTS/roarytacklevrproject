@@ -15,6 +15,7 @@ public class ControllerBindings : MonoBehaviour
     {
         controller = GetComponent<ActionBasedController>();
         controller.activateAction.action.performed += StartGame; //StartGame is executed when right trigger is pressed (right trigger is "activateAction" in InputActionAsset)
+        //controller.
     }
 
     //StartGame is executed when player presses the right trigger to start the game

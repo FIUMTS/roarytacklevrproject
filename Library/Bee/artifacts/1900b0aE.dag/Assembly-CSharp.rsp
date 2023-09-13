@@ -395,7 +395,9 @@
 "Assets/Scripts/FunctionTimer.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Loader.cs"
+"Assets/Scripts/MenuButtonActions.cs"
 "Assets/Scripts/QuadraticCurve.cs"
+"Assets/Scripts/ShiftSpeedMode.cs"
 "Assets/Scripts/Teleport.cs"
 "Assets/Scripts/TouchdownCollision.cs"
 -langversion:9.0
