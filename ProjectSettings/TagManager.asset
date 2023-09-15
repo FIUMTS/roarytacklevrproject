@@ -7,6 +7,10 @@ TagManager:
   - Controller
   - Roary
   - Catcher
+  - Parade
+  - TurnCollider
+  - TurnCollider2
+  - DeleteParadeObject
   layers:
   - Default
   - TransparentFX
