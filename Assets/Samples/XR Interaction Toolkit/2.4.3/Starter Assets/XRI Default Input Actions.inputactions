@@ -924,6 +924,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Speed Shift",
+                    "type": "Button",
+                    "id": "4a29470d-cc28-43ad-9f40-c4130d03d562",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1012,6 +1021,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Snap Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a570054f-40a4-4b5a-b207-e324d2915d70",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "Hold(duration=0.1)",
+                    "processors": "",
+                    "groups": "Continuous Move",
+                    "action": "Speed Shift",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

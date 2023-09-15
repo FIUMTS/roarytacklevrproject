@@ -10,6 +10,9 @@ public class Teleport : MonoBehaviour
     public GameObject suitePos;
     Vector3 menuStartPos;
 
+
+    private Animator animator;
+
     public void Start()
     {
         menuStartPos = player.transform.position;
@@ -29,7 +32,7 @@ public class Teleport : MonoBehaviour
 
     public void TeleportToMenuArea()
     {
-        player.transform.position = menuStartPos;
-        //player.transform.rotation = menuStartPos;
+        Loader.Reload();
     }
+
 }

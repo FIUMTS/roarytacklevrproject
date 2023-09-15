@@ -59,17 +59,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Collision.cs" />
+    <Compile Include="Assets\Scripts\Activate Fireworks Collision.cs" />
+    <Compile Include="Assets\Fireworks\Rocket 4\Script\Rocket4.cs" />
     <Compile Include="Assets\Scripts\MenuButtonActions.cs" />
+    <Compile Include="Assets\Scripts\TeleportInteracted.cs" />
+    <Compile Include="Assets\Fireworks\Firecracker 3\Script\Firecracker3.cs" />
     <Compile Include="Assets\Scripts\Football Path.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
+    <Compile Include="Assets\Fireworks\Rocket 5\Script\Rocket5.cs" />
     <Compile Include="Assets\Scripts\ShiftSpeedMode.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ControllerBindings.cs" />
     <Compile Include="Assets\Scripts\QuadraticCurve.cs" />
     <Compile Include="Assets\Scripts\Teleport.cs" />
+    <Compile Include="Assets\Fireworks\Rocket 3\Script\Rocket3.cs" />
+    <Compile Include="Assets\Fireworks\Rocket 1\Script\Rocket1.cs" />
+    <Compile Include="Assets\Fireworks\Firecracker 1\Script\Firecracker1.cs" />
+    <Compile Include="Assets\Fireworks\Rocket 2\Script\Rocket2.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\TouchdownCollision.cs" />
     <Compile Include="Assets\Scripts\FunctionTimer.cs" />
+    <Compile Include="Assets\Fireworks\Firecracker 2\Script\Firecracker2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

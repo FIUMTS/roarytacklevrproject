@@ -1,2 +1,4 @@
 /Library/PackageCache
 *{E,e}vercoast*
+/[Ll]ibrary/[Aa]rtifacts
+/[Ll]ibrary/ArtifactsDB

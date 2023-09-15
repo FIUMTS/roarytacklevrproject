@@ -2,20 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class ControllerBindings : MonoBehaviour
 {
 
     private ActionBasedController controller; //Controller input
-    public TextMeshProUGUI introText;         //Text above the large screen of arena
+    public InputActionReference speedShift;
+    public LocomotionSystem locomotionSystem;
+    private ActionBasedContinuousMoveProvider controllerContinuousMoveProvider;
+    //public TextMeshProUGUI introText;         //Text above the large screen of arena
     public GameManager gameManager;           //GameManager object
 
     void Start()
     {
         controller = GetComponent<ActionBasedController>();
         controller.activateAction.action.performed += StartGame; //StartGame is executed when right trigger is pressed (right trigger is "activateAction" in InputActionAsset)
-        //controller.
+        speedShift.action.performed += SpeedupShift;
+        speedShift.action.canceled += SlowdownShift;
+        controllerContinuousMoveProvider = locomotionSystem.GetComponent<ActionBasedContinuousMoveProvider>();
     }
 
     //StartGame is executed when player presses the right trigger to start the game
@@ -23,6 +29,16 @@ public class ControllerBindings : MonoBehaviour
     {
         //gameManager.isPaused = false;
         gameManager.StartGame(obj);
+    }
+
+    private void SpeedupShift(InputAction.CallbackContext ctx)
+    {
+        controllerContinuousMoveProvider.moveSpeed = 7.5f;
+    }
+
+    private void SlowdownShift(InputAction.CallbackContext ctx)
+    {
+        controllerContinuousMoveProvider.moveSpeed = 3.5f;
     }
 
 
