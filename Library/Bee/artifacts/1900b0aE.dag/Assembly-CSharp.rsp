@@ -410,6 +410,7 @@
 "Assets/Scripts/Teleport.cs"
 "Assets/Scripts/TeleportInteracted.cs"
 "Assets/Scripts/TouchdownCollision.cs"
+"Assets/Scripts/TriggerParade.cs"
 "Assets/Scripts/TurnOnCollide.cs"
 -langversion:9.0
 

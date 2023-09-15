@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Football Path.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
     <Compile Include="Assets\Fireworks\Rocket 5\Script\Rocket5.cs" />
+    <Compile Include="Assets\Scripts\TriggerParade.cs" />
     <Compile Include="Assets\Scripts\ShiftSpeedMode.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ControllerBindings.cs" />
