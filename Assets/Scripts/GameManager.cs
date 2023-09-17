@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
         footballEndpoint.transform.position = footballEndPaths.transform.GetChild(randomInt).position; //assigns endpoint relating to randomly assigned roary to be the endpoint that the football arc follows
         catcherAnimator = catcherRoary.GetComponent<Animator>();
         sampleTime = 0f;
-        Time.timeScale = 0; //freeze/pause game on load
+        //Time.timeScale = 0; //freeze/pause game on load
         player.transform.position = new Vector3(58.54f, 0.05f, -7.46f);
         //player.transform.Rotate(0, -90, 0);
         if (isPaused)
@@ -102,7 +102,12 @@ public class GameManager : MonoBehaviour
         {
             isPaused = false;
             Debug.Log("No longer paused");
-            Time.timeScale = 1.0f;      //Resume time
+            //Time.timeScale = 1.0f;      //Resume time
+            foreach(GameObject roary in roaries)
+            {
+                Animator animator = roary.GetComponent<Animator>();
+                animator.SetBool("gameStart", true);
+            }
             introText.text = "Tackle Roary before he catches the football!";
 
             //ecPlayer.Seek(0f);

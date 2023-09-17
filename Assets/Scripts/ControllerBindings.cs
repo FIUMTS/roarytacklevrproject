@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
 
 public class ControllerBindings : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class ControllerBindings : MonoBehaviour
     private ActionBasedContinuousMoveProvider controllerContinuousMoveProvider;
     //public TextMeshProUGUI introText;         //Text above the large screen of arena
     public GameManager gameManager;           //GameManager object
+
+    public float speed;
+    public float shiftSpeed;
 
     void Start()
     {
@@ -33,12 +37,12 @@ public class ControllerBindings : MonoBehaviour
 
     private void SpeedupShift(InputAction.CallbackContext ctx)
     {
-        controllerContinuousMoveProvider.moveSpeed = 7.5f;
+        controllerContinuousMoveProvider.moveSpeed = shiftSpeed;
     }
 
     private void SlowdownShift(InputAction.CallbackContext ctx)
     {
-        controllerContinuousMoveProvider.moveSpeed = 3.5f;
+        controllerContinuousMoveProvider.moveSpeed = speed;
     }
 
 
