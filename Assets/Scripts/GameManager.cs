@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public GameObject catcherRoary;             //catcher roary GameObject
     public GameObject football;                 //football gameobject
     public GameObject player;                   //player gameobject
+    public GameObject hikeSound;
+    public GameObject pregameWall;
 
     private Animator catcherAnimator;           //Animator for roary
 
@@ -39,6 +41,7 @@ public class GameManager : MonoBehaviour
     //private int level = 0;                      //int taht indicates difficulty level
 
     public GameObject roaryTackleGameObjects;   //all game objects associated with the Roary Tackle game
+    public GameObject roamingModeGameObjects;   //all game objects associated with the Roary Tackle game
 
 
     private float sampleTime;
@@ -101,16 +104,18 @@ public class GameManager : MonoBehaviour
         if (isPaused)
         {
             isPaused = false;
-            Debug.Log("No longer paused");
-            //Time.timeScale = 1.0f;      //Resume time
             foreach(GameObject roary in roaries)
             {
                 Animator animator = roary.GetComponent<Animator>();
-                animator.SetBool("gameStart", true);
+                animator.SetTrigger("gameStarted");
+                Debug.Log("Roary is now moving");
             }
+            Debug.Log("No longer paused");
+            
+            hikeSound.SetActive(true);
+            pregameWall.SetActive(false);
             introText.text = "Tackle Roary before he catches the football!";
 
-            //ecPlayer.Seek(0f);
             ecPlayer.Play();            //Play dean schriner ecv
 
             StartTimers();              //start any timers set up in the GameManager
