@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
 
     public void StartRoam()
     {
-        
+        roamingModeGameObjects.SetActive(true);
     }
 
     // Update is called once per frame
