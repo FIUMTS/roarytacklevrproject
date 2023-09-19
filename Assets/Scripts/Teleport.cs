@@ -20,13 +20,13 @@ public class Teleport : MonoBehaviour
 
     public void TeleportToField()
     {
-        player.transform.Rotate(0, -180, 0);
+        //player.transform.Rotate(0, -180, 0);
         player.transform.position = fieldPos.transform.position;
     }
     
     public void TeleportToSuites()
     {
-        player.transform.Rotate(0, -90, 0);
+        //player.transform.Rotate(0, -90, 0);
         player.transform.position = suitePos.transform.position;
     }
 

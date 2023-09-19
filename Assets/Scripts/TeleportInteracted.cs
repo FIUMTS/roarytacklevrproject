@@ -17,4 +17,9 @@ public class TeleportInteracted : MonoBehaviour
     {
         animator.SetTrigger("Interacted");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

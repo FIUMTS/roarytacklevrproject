@@ -109,12 +109,15 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.OpenXR.Features.Interactions.PalmPoseInteraction
     - UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile
     - UnityEngine.XR.OpenXR.OpenXRLoader
+    - UnityEngine.XR.OpenXR.OpenXRRestarter
     - UnityEngine.XR.OpenXR.OpenXRSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
