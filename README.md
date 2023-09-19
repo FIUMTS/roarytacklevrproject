@@ -1,4 +1,4 @@
-#FIU STadium
+# FIU Stadium
 
 FIU Stadium is a proof of concept VR game that explores the capabilities of the volumetric captures created by Florida International University's ISTAR (Immersive Studio for Altered Reality) volumetric studio. Through this game, we explore the potential of 3D scanning technology and it's implementation in not only Unity, but in virtual reality. The assets in this project were all created using the technologies available through ISTAR, such as our state-of-the-art hand scanner and our 21 depth-sensing camera studio.
 
