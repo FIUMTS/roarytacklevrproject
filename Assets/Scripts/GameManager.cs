@@ -38,43 +38,35 @@ public class GameManager : MonoBehaviour
     private bool ballThrown;                    //bool that checks if football has been thrown
     public bool isPaused;                       //bool to check if game is paused in beginning
 
-    //private int level = 0;                      //int taht indicates difficulty level
-
     public GameObject roaryTackleGameObjects;   //all game objects associated with the Roary Tackle game
     public GameObject roamingModeGameObjects;   //all game objects associated with the Roary Tackle game
 
 
     private float sampleTime;
 
-
-    void Start()        //Setting variables at startup
-    {
-        Debug.Log("Start function is running");
-
-
-    }
-
     public void StartRoaryTackle()
     {
+        //variables setup
+        ballThrown = false;                     //whether or not the football has been thrown
+        catcherTackled = false;                 //
+        catcherCaughtFootball = false;
+        isPaused = true;
+        ecPlayer = deanMesh.GetComponent<EvercoastPlayer>();
+        sampleTime = 0f;
 
+        //Sets all the Roary Tackle GameObjects visible and teleports the player into position.
         roaryTackleGameObjects.SetActive(true);
         player.transform.position = new Vector3(58.54f, 0.05f, -7.46f);
         player.transform.Rotate(0, -90, 0);
 
+        //assigns random roary to be catcher roary
         int randomInt = Random.Range(0, 10);
-
-        ballThrown = false;
-        catcherTackled = false;
-        catcherCaughtFootball = false;
-        isPaused = true;
-
-        ecPlayer = deanMesh.GetComponent<EvercoastPlayer>();
-        catcherRoary = roaries[randomInt]; //assigns random roary to be catcher roary
+        catcherRoary = roaries[randomInt]; 
         catcherRoary.tag = "Catcher"; 
         footballEndpoint.transform.position = footballEndPaths.transform.GetChild(randomInt).position; //assigns endpoint relating to randomly assigned roary to be the endpoint that the football arc follows
         catcherAnimator = catcherRoary.GetComponent<Animator>();
-        sampleTime = 0f;
-        //Time.timeScale = 0; //freeze/pause game on load
+
+
         player.transform.position = new Vector3(58.54f, 0.05f, -7.46f);
         //player.transform.Rotate(0, -90, 0);
         if (isPaused)
@@ -93,7 +85,6 @@ public class GameManager : MonoBehaviour
     {
         if(ballThrown)
         {
-           // Debug.Log("This should be called");
             ThrowBall();
         }
     }
@@ -115,8 +106,11 @@ public class GameManager : MonoBehaviour
             hikeSound.SetActive(true);
             pregameWall.SetActive(false);
             introText.text = "Tackle Roary before he catches the football!";
+            if(ecPlayer != null)
+            {
+                ecPlayer.Play();            //Play dean schriner ecv
+            }
 
-            ecPlayer.Play();            //Play dean schriner ecv
 
             StartTimers();              //start any timers set up in the GameManager
         }
