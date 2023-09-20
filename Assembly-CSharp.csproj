@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Activate Fireworks Collision.cs" />
     <Compile Include="Assets\Fireworks\Rocket 4\Script\Rocket4.cs" />
     <Compile Include="Assets\Scripts\TurnOnCollide.cs" />
+    <Compile Include="Assets\Scripts\PlayECM.cs" />
     <Compile Include="Assets\Scripts\MenuButtonActions.cs" />
     <Compile Include="Assets\Scripts\TeleportInteracted.cs" />
     <Compile Include="Assets\Fireworks\Firecracker 3\Script\Firecracker3.cs" />

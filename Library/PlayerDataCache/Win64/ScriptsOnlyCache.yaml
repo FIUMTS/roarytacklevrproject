@@ -217,6 +217,12 @@ ScriptsOnlyBuild:
     methodName: Interacted
   - assembly: Assembly-CSharp
     fullTypeName: Teleport
+    methodName: TeleportToMenuArea
+  - assembly: Assembly-CSharp
+    fullTypeName: TeleportInteracted
+    methodName: Interacted
+  - assembly: Assembly-CSharp
+    fullTypeName: Teleport
     methodName: TeleportToSuites
   - assembly: Assembly-CSharp
     fullTypeName: TeleportInteracted
@@ -236,6 +242,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MenuButtonActions
     methodName: StartRoaryTackle
+  - assembly: Assembly-CSharp
+    fullTypeName: TeleportInteracted
+    methodName: Interacted
+  - assembly: Assembly-CSharp
+    fullTypeName: TeleportInteracted
+    methodName: ExitGame
   - assembly: Assembly-CSharp
     fullTypeName: TeleportInteracted
     methodName: Interacted

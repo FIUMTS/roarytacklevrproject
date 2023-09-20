@@ -405,6 +405,7 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Loader.cs"
 "Assets/Scripts/MenuButtonActions.cs"
+"Assets/Scripts/PlayECM.cs"
 "Assets/Scripts/QuadraticCurve.cs"
 "Assets/Scripts/ShiftSpeedMode.cs"
 "Assets/Scripts/Teleport.cs"
