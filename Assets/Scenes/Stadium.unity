@@ -14728,6 +14728,10 @@ PrefabInstance:
       value: HelpXRControllerRight Back
       objectReference: {fileID: 0}
     - target: {fileID: 4484649728117633534, guid: f9c6ce8e7b894b04aa4f99b2c260f7ea, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484649728117633534, guid: f9c6ce8e7b894b04aa4f99b2c260f7ea, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0c8df24d620a5474e84ba06dff5216d3, type: 2}
