@@ -110,8 +110,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -230,12 +232,6 @@ ScriptsOnlyBuild:
     fullTypeName: Teleport
     methodName: TeleportToMenuArea
   - assembly: Assembly-CSharp
-    fullTypeName: PlayECM
-    methodName: Play
-  - assembly: Assembly-CSharp
-    fullTypeName: PlayECM
-    methodName: Stop
-  - assembly: Assembly-CSharp
     fullTypeName: TeleportInteracted
     methodName: Interacted
   - assembly: Assembly-CSharp
@@ -304,12 +300,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Teleport
     methodName: TeleportToMenuArea
-  - assembly: Assembly-CSharp
-    fullTypeName: PlayECM
-    methodName: Play
-  - assembly: Assembly-CSharp
-    fullTypeName: PlayECM
-    methodName: Stop
   - assembly: Assembly-CSharp
     fullTypeName: TeleportInteracted
     methodName: Interacted
@@ -2607,4 +2597,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Stadium.unity
-  playerPath: C:/Users/alecramo/Desktop/FIU Stadium/FIU Stadium.exe
+  playerPath: C:/Users/alecramo/Desktop/FIU Stadium VR/FIU Stadium.exe
