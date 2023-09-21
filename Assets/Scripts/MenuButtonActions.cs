@@ -10,13 +10,17 @@ public class MenuButtonActions : MonoBehaviour
     public GameObject roamingModeObjects;
     public GameObject interactText;
     public GameObject exploreButton;
+    public GameObject tackleButton;
     // Start is called before the first frame update
     public void StartRoaryTackle()
-        { gameManager.StartRoaryTackle(); }
+    { 
+        gameManager.StartRoaryTackle();
+    }
 
     public void StartRoam()
     {
         exploreButton.SetActive(false);
+        tackleButton.SetActive(false);
         teleportPoints.SetActive(true);
         interactText.SetActive(true);
         gameManager.StartRoam();

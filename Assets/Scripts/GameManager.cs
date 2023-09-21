@@ -66,13 +66,16 @@ public class GameManager : MonoBehaviour
         footballEndpoint.transform.position = footballEndPaths.transform.GetChild(randomInt).position; //assigns endpoint relating to randomly assigned roary to be the endpoint that the football arc follows
         catcherAnimator = catcherRoary.GetComponent<Animator>();
 
+        foreach (GameObject roary in roaries)
+        {
+            if(!roary.CompareTag("Catcher"))
+            {
+                roary.SetActive(false);
+            }
+        }
+
 
         player.transform.position = new Vector3(58.54f, 0.05f, -7.46f);
-        //player.transform.Rotate(0, -90, 0);
-        if (isPaused)
-        {
-            Debug.Log("Game is paused.");
-        }
     }
 
     public void StartRoam()
